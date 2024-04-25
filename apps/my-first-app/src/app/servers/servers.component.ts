@@ -7,6 +7,6 @@ import { ServerComponent } from '../server/server.component';
   standalone: true,
   imports: [CommonModule, ServerComponent],
   template: '<h4>I\'m in the ServersComponent</h4><app-server></app-server><app-server></app-server>',
-  styleUrl: './servers.component.css',
+  styles: ['h4 { color: red;}'],
 })
 export class ServersComponent {}
