@@ -20,7 +20,7 @@
           "apps/my-first-app/src/assets"
         ],
         "styles": [
-          "node_modules/bootstrap/dist/css/bootstrap.css",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
           "apps/my-first-app/src/styles.css"
         ],
         "scripts": []
