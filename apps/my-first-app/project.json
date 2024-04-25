@@ -19,7 +19,10 @@
           "apps/my-first-app/src/favicon.ico",
           "apps/my-first-app/src/assets"
         ],
-        "styles": ["apps/my-first-app/src/styles.css"],
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.css",
+          "apps/my-first-app/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
