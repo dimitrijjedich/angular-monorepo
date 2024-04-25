@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, ServerComponent],
+  imports: [RouterModule, ServersComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
