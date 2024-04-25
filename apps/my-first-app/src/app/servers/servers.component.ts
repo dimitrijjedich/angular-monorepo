@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ServerComponent } from '../server/server.component';
 
 @Component({
-  selector: 'app-servers',
+  selector: '[app-servers]',
   standalone: true,
   imports: [CommonModule, ServerComponent],
   template: '<h4>I\'m in the ServersComponent</h4><app-server></app-server><app-server></app-server>',
