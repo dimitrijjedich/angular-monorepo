@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ServerComponent } from '../server/server.component';
 
 @Component({
   selector: '[app-servers]',
   standalone: true,
-  imports: [CommonModule, ServerComponent],
+  imports: [CommonModule, ServerComponent, FormsModule],
   templateUrl: './servers.component.html',
   styles: ['h4 { color: red;}'],
 })
