@@ -9,4 +9,12 @@ import { ServerComponent } from '../server/server.component';
   templateUrl: './servers.component.html',
   styles: ['h4 { color: red;}'],
 })
-export class ServersComponent {}
+export class ServersComponent {
+  allowNewServer: boolean = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
+}
