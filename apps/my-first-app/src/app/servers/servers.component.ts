@@ -11,10 +11,14 @@ import { ServerComponent } from '../server/server.component';
 })
 export class ServersComponent {
   allowNewServer: boolean = false;
-
+  serverCreationStatus: string = 'No server was created!'
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
+  }
+
+  onCreatServer() {
+    this.serverCreationStatus = 'Server was created';
   }
 }
