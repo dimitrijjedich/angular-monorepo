@@ -9,11 +9,4 @@ import { ServerComponent } from '../server/server.component';
   templateUrl: './servers.component.html',
   styles: ['h4 { color: red;}'],
 })
-export class ServersComponent {
-  serverId: number = 10;
-  serverStatus: string = 'offline';
-
-  getServerStatus() {
-    return this.serverStatus
-  }
-}
+export class ServersComponent {}

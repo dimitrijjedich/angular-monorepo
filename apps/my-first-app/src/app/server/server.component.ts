@@ -8,4 +8,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './server.component.html',
   styleUrl: './server.component.css',
 })
-export class ServerComponent {}
+export class ServerComponent {
+  serverId: number = 10;
+  serverStatus: string = 'offline';
+
+  getServerStatus() {
+    return this.serverStatus
+  }
+}
