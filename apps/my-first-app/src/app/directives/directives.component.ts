@@ -8,4 +8,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.css',
 })
-export class DirectivesComponent {}
+
+export class DirectivesComponent {
+  displayText: boolean = false;
+  onButtonClick() {
+    this.displayText = !this.displayText;
+  }
+}
