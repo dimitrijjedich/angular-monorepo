@@ -18,6 +18,6 @@
   Add Server
 </button>
 <p [innerText]="allowNewServer"></p>
-<p>Servername {{ serverName}} has status {{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated">Servername {{ serverName}} has status {{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
