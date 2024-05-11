@@ -4,4 +4,9 @@
 >
   Display Details
 </button>
+<ul>
+  <li *ngFor="let counter of clickCounter">
+    {{counter}}
+  </li>
+</ul>
 <p *ngIf="displayText">This is some secret text!</p>

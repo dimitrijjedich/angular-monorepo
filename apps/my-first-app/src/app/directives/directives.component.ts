@@ -11,7 +11,9 @@ import { CommonModule } from '@angular/common';
 
 export class DirectivesComponent {
   displayText: boolean = false;
+  clickCounter = [0];
   onButtonClick() {
     this.displayText = !this.displayText;
+    this.clickCounter.push(this.clickCounter[this.clickCounter.length-1]+1);
   }
 }
