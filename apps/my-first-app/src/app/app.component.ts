@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
@@ -12,7 +13,8 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
     ServersComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DirectivesComponent
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
