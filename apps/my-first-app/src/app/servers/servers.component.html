@@ -22,6 +22,10 @@
 <ng-template #noServer>
   <p>No Server was created!</p>
 </ng-template>
-
+@if (serverCreated) {
+  <p>Servername {{ serverName}} has status {{ serverCreationStatus }}</p>
+} @else {
+  <p>No Server was created!</p>
+}
 <app-server></app-server>
 <app-server></app-server>
