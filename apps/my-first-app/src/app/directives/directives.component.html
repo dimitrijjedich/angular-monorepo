@@ -1,0 +1,16 @@
+<button
+  class="btn btn-primary"
+  (click)="onButtonClick()"
+>
+  Display Details
+</button>
+<ul>
+  <li
+    *ngFor="let counter of clickCounter; let i = index"
+    [ngStyle]="{backgroundColor: getColor(i)}"
+    [ngClass]="{gtFive: i >= 5}"
+  >
+    {{counter}}
+  </li>
+</ul>
+<p *ngIf="displayText">This is some secret text!</p>
