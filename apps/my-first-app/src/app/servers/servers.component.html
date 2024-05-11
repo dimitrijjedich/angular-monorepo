@@ -28,3 +28,6 @@
   <p>No Server was created!</p>
 }
 <app-server *ngFor="let server of servers"></app-server>
+@for (server of servers; track server) {
+  <app-server></app-server>
+}
