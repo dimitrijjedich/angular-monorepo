@@ -16,4 +16,9 @@ export class DirectivesComponent {
     this.displayText = !this.displayText;
     this.clickCounter.push(this.clickCounter[this.clickCounter.length-1]+1);
   }
+
+  getColor(value: number) {
+    return  value >= 5 ? 'blue' : 'white';
+  }
+
 }

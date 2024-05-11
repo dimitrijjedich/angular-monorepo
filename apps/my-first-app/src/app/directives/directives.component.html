@@ -5,7 +5,11 @@
   Display Details
 </button>
 <ul>
-  <li *ngFor="let counter of clickCounter">
+  <li
+    *ngFor="let counter of clickCounter"
+    [ngStyle]="{backgroundColor: getColor(counter)}"
+    [ngClass]="{gtFive: counter >= 5}"
+  >
     {{counter}}
   </li>
 </ul>
